@@ -15,5 +15,20 @@ python image_source.py --dset office --s 0 --max_epoch 100 --trte val --gpu_id 0
 ```
 - Adapt to target (shown here for Office with target D)
 ```
-python adapt_multi.py --dset office --t 1 --max_epoch 100 --gpu_id 0 --output_src ckps/source/ --output ckps/adapt
+python adapt_multi.py --dset office --t 1 --max_epoch 15 --gpu_id 0 --output_src ckps/source/ --output ckps/adapt
+```
+- Distill to single target model (shown here for Office with target D)
+```
+python distill.py --dset office --t 1 --max_epoch 15 --gpu_id 0 --output_src ckps/adapt --output ckps/dist
+```
+
+### Citation
+Please cite the following work if you use this package.
+```
+@article{ahmed2021unsupervised,
+  title={Unsupervised Multi-source Domain Adaptation Without Access to Source Data},
+  author={Ahmed, Sk Miraj and Raychaudhuri, Dripta S and Paul, Sujoy and Oymak, Samet and Roy-Chowdhury, Amit K},
+  journal={arXiv preprint arXiv:2104.01845},
+  year={2021}
+}
 ```
