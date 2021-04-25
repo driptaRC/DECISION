@@ -274,7 +274,7 @@ if __name__ == "__main__":
     args.s_dset_path = folder + args.dset + '/' + names[args.s] + '_list.txt'
     args.test_dset_path = folder + args.dset + '/' + names[args.t] + '_list.txt'     
 
-    args.output_dir_src = osp.join(args.output, args.da, args.dset, names[args.s][0].upper())
+    args.output_dir_src = osp.join(args.output, args.dset, names[args.s][0].upper())
     args.name_src = names[args.s][0].upper()
     if not osp.exists(args.output_dir_src):
         os.system('mkdir -p ' + args.output_dir_src)
