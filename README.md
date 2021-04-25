@@ -2,7 +2,7 @@
 Unsupervised Multi-source Domain Adaptation Without Access to Source Data (CVPR '21 Oral)
 
 ### Overview
-This repository is a PyTorch implementation of the paper [Unsupervised Multi-source Domain Adaptation Without Access to Source Data](https://arxiv.org/pdf/2104.01845.pdf) published at [CVPR 2021](http://cvpr2021.thecvf.com/). (alpha build)
+This repository is a PyTorch implementation of the paper [Unsupervised Multi-source Domain Adaptation Without Access to Source Data](https://arxiv.org/pdf/2104.01845.pdf) published at [CVPR 2021](http://cvpr2021.thecvf.com/). This code is based on the [SHOT](https://github.com/tim-learn/SHOT) repository.
 
 ### Dataset
 - Manually download the datasets [Office](https://drive.google.com/file/d/0B4IapRTv9pJ1WGZVd1VDMmhwdlE/view), [Office-Home](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view), [Office-Caltech](http://www.vision.caltech.edu/Image_Datasets/Caltech256/256_ObjectCategories.tar) from the official websites.
