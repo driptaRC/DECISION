@@ -239,10 +239,10 @@ if __name__ == "__main__":
     parser.add_argument('--max_epoch', type=int, default=20, help="max iterations")
     parser.add_argument('--batch_size', type=int, default=32, help="batch_size")
     parser.add_argument('--worker', type=int, default=4, help="number of workers")
-    parser.add_argument('--dset', type=str, default='office-home', choices=['VISDA-C', 'office', 'office-home', 'office-caltech'])
+    parser.add_argument('--dset', type=str, default='office-home', choices=['office', 'office-home', 'office-caltech'])
     parser.add_argument('--lr', type=float, default=1e-2, help="learning rate")
     parser.add_argument('--net', type=str, default='resnet50', help="vgg16, resnet50, resnet101")
-    parser.add_argument('--seed', type=int, default=2020, help="random seed")
+    parser.add_argument('--seed', type=int, default=2021, help="random seed")
     parser.add_argument('--bottleneck', type=int, default=256)
     parser.add_argument('--epsilon', type=float, default=1e-5)
     parser.add_argument('--layer', type=str, default="wn", choices=["linear", "wn"])
@@ -284,6 +284,7 @@ if __name__ == "__main__":
     args.out_file = open(osp.join(args.output_dir_src, 'log.txt'), 'w')
     args.out_file.write(print_args(args)+'\n')
     args.out_file.flush()
+    
     train_source(args)
 
     args.out_file = open(osp.join(args.output_dir_src, 'log_test.txt'), 'w')
