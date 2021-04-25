@@ -13,7 +13,7 @@ This repository is a PyTorch implementation of the paper [Unsupervised Multi-sou
 ```
 python image_source.py --dset office --s 0 --max_epoch 100 --trte val --gpu_id 0 --output ckps/source/
 ```
-- Adapt to target (shown here fot Office with target D)
+- Adapt to target (shown here for Office with target D)
 ```
 python adapt_multi.py --dset office --t 1 --max_epoch 100 --gpu_id 0 --output_src ckps/source/ --output ckps/adapt
 ```
