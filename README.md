@@ -9,6 +9,7 @@ Create a conda environment with `environment.yml`.
 
 ### Dataset
 - Manually download the datasets [Office](https://drive.google.com/file/d/0B4IapRTv9pJ1WGZVd1VDMmhwdlE/view), [Office-Home](https://drive.google.com/file/d/0B81rNlvomiwed0V1YUxQdC1uOTg/view), [Office-Caltech](http://www.vision.caltech.edu/Image_Datasets/Caltech256/256_ObjectCategories.tar) from the official websites.
+- Move `gen_list.py` inside data directory.
 - Generate '.txt' file for each dataset using `gen_list.py` (change dataset argument in the file accordingly). 
 
 ### Training
