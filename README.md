@@ -14,7 +14,7 @@ Create a conda environment with `environment.yml`.
 ### Training
 - Train source models (shown here for Office with source A)
 ```
-python image_source.py --dset office --s 0 --max_epoch 100 --trte val --gpu_id 0 --output ckps/source/
+python train_source.py --dset office --s 0 --max_epoch 100 --trte val --gpu_id 0 --output ckps/source/
 ```
 - Adapt to target (shown here for Office with target D)
 ```
