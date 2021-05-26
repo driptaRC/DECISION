@@ -387,7 +387,7 @@ if __name__ == "__main__":
 
     args.output_dir_src = []
     for i in range(len(args.src)):
-        args.output_dir_src.append(osp.join(args.output_src, args.da, args.dset, args.src[i][0].upper()))
+        args.output_dir_src.append(osp.join(args.output_src, args.dset, args.src[i][0].upper()))
     print(args.output_dir_src)
     args.output_dir = osp.join(args.output, args.dset, names[args.t][0].upper())
 
@@ -397,10 +397,6 @@ if __name__ == "__main__":
         os.mkdir(args.output_dir)
 
     args.savename = 'par_' + str(args.cls_par)
-    if args.da == 'pda':
-        args.gent = ''
-        args.savename = 'par_' + str(args.cls_par) + '_thr' + str(args.threshold)
-
 
     train_target(args)
 
